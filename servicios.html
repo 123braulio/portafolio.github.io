@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="assets/css/main2.css" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/css/main2.css" rel="stylesheet" />
+  <link href="assets/css/templatemo-topic-listing.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </head>
+    <meta charset="UTF-8">
+    <title>Inicio Aleatorio</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+        }
+        body{
+            background-image: linear-gradient(15deg, #7a1313 0%, #dbaa07 100%);
+        }
+
+        .hero{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #b1a4a4;
+        }
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0; 
+            align-items: center ;
+            justify-content: space-between;
+        }
+            nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+            nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            color:rgb(255, 230, 0);
+        }
+
+        .delet{
+            margin-left: 8%;
+            margin-top: 20%;
+        }
+
+        .delet h1{
+            font-size: 50px;
+            color:#121212ce;
+            margin-bottom: 20px;
+        }
+
+        span{
+            color: orange;
+        }
+        .delet p{
+            color:#ffffff;
+            line-height: 22px; 
+        }
+        .delet a{
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color:#fff;
+            display:inline-block;
+            margin:30px 0;
+            border-radius: 5px;
+        }
+
+        .image{
+
+            width: 45%;
+            height: 80%;
+            position:absolute;
+            bottom: 0; 
+            right: 100px;
+        }
+
+        .image img{  
+            height: 100%;
+            position:absolute ;
+            left: 50%;
+            bottom: 0;
+            transform: translateX( -50%);
+            transition: bottom 2s left 2s;
+        }
+
+        .logo {
+            height: 90px;
+            vertical-align: middle;
+            border-radius: 30px;
+        }
+
+      .header {
+            background-color: #d79d03;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            height: 74px;
+            border-radius: 15px;
+        }
+
+       .container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px); /* deja espacio para el header y nav */
+    overflow: hidden; /* opcional para que no se vean fuera */
+        }
+
+        .card {
+           position: absolute;
+            width: 232px;
+            height: 157px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .card-title {
+             font-size: 23px;
+            font-weight: bold;
+            color: #d79300;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 16px;
+            color: #333;
+        }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .image img.person {
+        height: auto;
+        width: 0%;
+    }
+} 
+    </style>
+</head>
+<body>
+        <nav>
+      <img src="loggo.png" alt="logo" class="logo" />
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Acercademi.html">Acerca de</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contácto</a></li>
+      </ul>
+    </nav>
+    <div class="header">Servicios</div>
+
+ <div class="container">
+    <a href="" class="card">
+        <div class="card-title">Diseño de Páginas Web</div>
+        <div class="card-desc">Diseños personalizados y publicación de sitios web en internet.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Mantenimiento de Computadoras</div>
+        <div class="card-desc">Soporte técnico y mantenimiento a domicilio. Disponible solo sábados.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Soporte a Teléfonos</div>
+        <div class="card-desc">Reparaciones generales: cambio de pantalla, módulo de carga, display, flex, batería y testeo.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Diseño de Anuncios</div>
+        <div class="card-desc">Diseño gráfico de anuncios básicos. Estamos mejorando.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Diseño de Redes</div>
+        <div class="card-desc">Estructuración de redes LAN con servidor integrado.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Hosting</div>
+        <div class="card-desc">Servicio de hosting en desarrollo. Pronto disponible.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Soldadura</div>
+        <div class="card-desc">Trabajos generales. Temporalmente suspendido por temas de movilidad.</div>
+    </a>
+    <a href="pagina8.html" class="card">
+        <div class="card-title">Sitios Web con Base de Datos</div>
+        <div class="card-desc">Diseño web completo con conexión a base de datos y hosting.</div>
+    </a>
+    <a href="" class="card">
+        <div class="card-title">Gestión de Bases de Datos</div>
+        <div class="card-desc">Diseño y estructuración de bases de datos a medida.</div>
+    </a>
+</div>
+
+
+  <script>
+    window.onload = function () {
+        const cards = document.querySelectorAll(".card");
+        const container = document.querySelector(".container");
+
+        const containerWidth = container.clientWidth;
+        const containerHeight = container.clientHeight;
+
+        const cardWidth = 180;
+        const cardHeight = 130;
+
+        const positions = [];
+
+        function isOverlapping(x, y) {
+            return positions.some(pos => {
+                return (
+                    x < pos.x + cardWidth &&
+                    x + cardWidth > pos.x &&
+                    y < pos.y + cardHeight &&
+                    y + cardHeight > pos.y
+                );
+            });
+        }
+
+        cards.forEach(card => {
+            let attempts = 0;
+            let top, left;
+            do {
+                left = Math.floor(Math.random() * (containerWidth - cardWidth));
+                top = Math.floor(Math.random() * (containerHeight - cardHeight));
+                attempts++;
+            } while (isOverlapping(left, top) && attempts < 100);
+
+            positions.push({ x: left, y: top });
+            card.style.left = `${left}px`;
+            card.style.top = `${top}px`;
+        });
+    };
+</script>
+
+</body>
+</html>
